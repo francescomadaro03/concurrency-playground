@@ -14,29 +14,20 @@ The exercise prompts come from university labs, past exam papers and practice se
 
 
 
+Ecco la tabella corretta. I problemi principali erano gli **spazi vuoti tra le righe** (che interrompono la tabella in Markdown) e i **backslash (`\`) di escape superflui** per gli underscore all'interno dei blocchi di codice, che Markdown non richiede.
+
 | Folder | File | What it shows |
-
-|---|---|---|
-
-| `sync-primitives/` | `reusable\_barrier.cpp` | Reusable barrier built from `mutex` + `condition\_variable` with a generation counter; threads synchronise between the stages of a computation |
-
-| | `priority\_semaphore.cpp` | Counting semaphore whose waiting threads are released by priority |
-
-| | `bounded\_queue\_pipeline.cpp` | Bounded thread-safe queue; a generator feeds a router that dispatches even/odd numbers to two worker threads |
-
-| | `readers\_writers.cpp` | Readers/writers on shared data with `condition\_variable` |
-
-| | `packet\_pipeline.cpp` | Three-stage packet assembly (header, payload, checksum) over a circular buffer with `std::counting\_semaphore`, then analysed by consumer threads |
-
+| --- | --- | --- |
+| `sync-primitives/` | `reusable_barrier.cpp` | Reusable barrier built from `mutex` + `condition_variable` with a generation counter; threads synchronise between the stages of a computation |
+|  | `priority_semaphore.cpp` | Counting semaphore whose waiting threads are released by priority |
+|  | `bounded_queue_pipeline.cpp` | Bounded thread-safe queue; a generator feeds a router that dispatches even/odd numbers to two worker threads |
+|  | `readers_writers.cpp` | Readers/writers on shared data with `condition_variable` |
+|  | `packet_pipeline.cpp` | Three-stage packet assembly (header, payload, checksum) over a circular buffer with `std::counting_semaphore`, then analysed by consumer threads |
 | `futures-and-barriers/` | `jacobi.cpp` | Jacobi iteration for Ax = b, one thread per unknown, synchronised at every iteration |
-
-| | `parallel\_merge.cpp` | Two threads build and sort arrays and deliver them through `promise`/`future` to a third thread that merges them |
-
-| | `map\_reduce.cpp` | Partial counts computed by worker threads and combined after a `std::barrier` |
-
-| | `agents.cpp` | Agents doing a random walk on a shared matrix read from a file, with mutex-protected cell claiming and a barrier between steps |
-
-| `c-posix/` | `ipc\_fork\_pipe\_mmap.c` | `fork`, two pipes and anonymous shared memory (`mmap`) used for token passing between parent and child |
+|  | `parallel_merge.cpp` | Two threads build and sort arrays and deliver them through `promise`/`future` to a third thread that merges them |
+|  | `map_reduce.cpp` | Partial counts computed by worker threads and combined after a `std::barrier` |
+|  | `agents.cpp` | Agents doing a random walk on a shared matrix read from a file, with mutex-protected cell claiming and a barrier between steps |
+| `c-posix/` | `ipc_fork_pipe_mmap.c` | `fork`, two pipes and anonymous shared memory (`mmap`) used for token passing between parent and child |
 
 
 
