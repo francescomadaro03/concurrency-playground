@@ -1,4 +1,4 @@
-\# Concurrency exercises in C++ (and C/POSIX)
+# Concurrency exercises in C++ (and C/POSIX)
 
 
 
@@ -10,7 +10,7 @@ The exercise prompts come from university labs, past exam papers and practice se
 
 
 
-\## Contents
+## Contents
 
 
 
@@ -40,7 +40,7 @@ The exercise prompts come from university labs, past exam papers and practice se
 
 
 
-\## Build
+## Build
 
 
 
@@ -66,27 +66,26 @@ Concurrency bugs are easy to miss by running a program once, so I recommend also
 
 
 
-\## Scope and limitations
+## Scope and limitations
 
 
 
-\- These are teaching exercises. They show that I can design and reason about synchronisation, not how to get speedup on large workloads: there are no benchmarks or scaling measurements here.
+- These are teaching exercises. They show that I can design and reason about synchronisation, not how to get speedup on large workloads: there are no benchmarks or scaling measurements here.
 
-\- Several programs run threads in infinite loops or until a fixed amount of work is done, and have no clean shutdown mechanism.
+- Several programs run threads in infinite loops or until a fixed amount of work is done, and have no clean shutdown mechanism.
 
-\- Error handling is minimal (for example, command-line arguments are barely validated).
+- Error handling is minimal (for example, command-line arguments are barely validated).
 
-\- There are no automated tests.
-
-\- CUDA code is not part of this repository yet.
+- There are no automated tests.
 
 
 
-\## Layout notes
+
+## Layout notes
 
 
 
-\- Build output (`\*.exe`, `\*.o`) and editor settings (`.vscode/`) are not tracked; see `.gitignore`.
+- Build output (`\*.exe`, `\*.o`) and editor settings (`.vscode/`) are not tracked; see `.gitignore`.
 
-\- Each exercise lives in a single source file so that it can be read top to bottom.
+- Each exercise lives in a single source file so that it can be read top to bottom.
 
